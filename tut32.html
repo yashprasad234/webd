@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child pseudo selector</title>
+
+    <style>
+        .container {
+            margin: 24px 32px;
+            width: 300px;
+            margin: auto;
+        }
+
+        input {
+            display: block;
+        }
+
+        /* This selector is used to select elements which has the given attribute set to the value provided */
+        input[type="text"] {
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid gray;
+        }
+
+        /* This selector is used to select elements that have the mentioned attribute set to something in the declaration */
+        a[target] {
+            text-decoration: none;
+            font-size: 45px;
+            font-style: italic;
+            color: aquamarine;
+        }
+
+        /* This selector is used to select the nth child of the mentioned selector type*/
+        /* This will apply every time there are a series of elements mentioned there parent elements may be different */
+        /* li:nth-child(5) {
+            color: rgb(51, 73, 172);
+        } */
+
+        /* This selector is used to select every 3rd element of the mentioned selector type*/
+        /* Put value of n inside the expression and you will get to which elements the css will apply */
+        /* This will apply every time there are a series of elements mentioned there parent elements may be different */
+        /* li:nth-child(3n+0) {
+            color: rgb(139, 255, 6);
+        } */
+
+        /* odd child */
+        /* li:nth-child(odd) {
+            color: rgb(139, 255, 6);
+        } */
+
+        /* even child */
+        li:nth-child(even) {
+            color: rgb(139, 255, 6);
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1><a href="http://google.com" target="_blank">Go to google</a></h1>
+        <form action="" class="form-control">
+            <input type="text" placeholder="enter your name">
+            <input type="password" placeholder="enter your password">
+            <input type="submit" value="submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+            <li class="item" id="item-6">Item6</li>
+            <li class="item" id="item-7">Item7</li>
+            <li class="item" id="item-8">Item8</li>
+            <li class="item" id="item-9">Item9</li>
+            <li class="item" id="item-10">Item10</li>
+        </ul>
+    </div>
+    <div class="container-2">
+        <ul>
+            <li class="item" id="item01">This is item1</li>
+            <li class="item" id="item02">This is item2</li>
+            <li class="item" id="item03">This is item3</li>
+            <li class="item" id="item04">This is item4</li>
+            <li class="item" id="item05">This is item5</li>
+            <li class="item" id="item06">This is item6</li>
+            <li class="item" id="item07">This is item7</li>
+            <li class="item" id="item08">This is item8</li>
+            <li class="item" id="item09">This is item9</li>
+            <li class="item" id="item10">This is item10</li>
+        </ul>
+    </div>
+</body>
+</html>
