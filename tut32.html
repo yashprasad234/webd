@@ -6,58 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Attribute and nth child pseudo selector</title>
 
-    <style>
-        .container {
-            margin: 24px 32px;
-            width: 300px;
-            margin: auto;
-        }
-
-        input {
-            display: block;
-        }
-
-        /* This selector is used to select elements which has the given attribute set to the value provided */
-        input[type="text"] {
-            margin: 10px;
-            padding: 10px;
-            border: 2px solid gray;
-        }
-
-        /* This selector is used to select elements that have the mentioned attribute set to something in the declaration */
-        a[target] {
-            text-decoration: none;
-            font-size: 45px;
-            font-style: italic;
-            color: aquamarine;
-        }
-
-        /* This selector is used to select the nth child of the mentioned selector type*/
-        /* This will apply every time there are a series of elements mentioned there parent elements may be different */
-        /* li:nth-child(5) {
-            color: rgb(51, 73, 172);
-        } */
-
-        /* This selector is used to select every 3rd element of the mentioned selector type*/
-        /* Put value of n inside the expression and you will get to which elements the css will apply */
-        /* This will apply every time there are a series of elements mentioned there parent elements may be different */
-        /* li:nth-child(3n+0) {
-            color: rgb(139, 255, 6);
-        } */
-
-        /* odd child */
-        /* li:nth-child(odd) {
-            color: rgb(139, 255, 6);
-        } */
-
-        /* even child */
-        li:nth-child(even) {
-            color: rgb(139, 255, 6);
-        }
-
-    </style>
+    
 
 </head>
+<style>
+    .container {
+        margin: 24px 32px;
+        width: 300px;
+        margin: auto;
+    }
+
+    input {
+        display: block;
+    }
+
+    /* This selector is used to select elements which has the given attribute set to the value provided */
+    input[type="text"] {
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid gray;
+    }
+
+    /* This selector is used to select elements that have the mentioned attribute set to something in the declaration */
+    a[target] {
+        text-decoration: none;
+        font-size: 45px;
+        font-style: italic;
+        color: aquamarine;
+    }
+
+    /* This selector is used to select the nth child of the mentioned selector type*/
+    /* This will apply every time there are a series of elements mentioned there parent elements may be different */
+    /* li:nth-child(5) {
+        color: rgb(51, 73, 172);
+    } */
+
+    /* This selector is used to select every 3rd element of the mentioned selector type*/
+    /* Put value of n inside the expression and you will get to which elements the css will apply */
+    /* This will apply every time there are a series of elements mentioned there parent elements may be different */
+    /* li:nth-child(3n+0) {
+        color: rgb(139, 255, 6);
+    } */
+
+    /* odd child */
+    /* li:nth-child(odd) {
+        color: rgb(139, 255, 6);
+    } */
+
+    /* even child */
+    li:nth-child(even) {
+        color: rgb(139, 255, 6);
+    }
+
+</style>
 <body>
     <div class="container">
         <h1><a href="http://google.com" target="_blank">Go to google</a></h1>

@@ -20,7 +20,7 @@
         padding: 0;
         position: relative;
         /* animation name it can be anything */
-        animation-name: yash2;
+        animation-name: rotate360;
         /* this decides how much time it will take to complete the animation */
         animation-duration: 3s;
         /* number of times you want the animation to repeat */
@@ -34,17 +34,12 @@
         animation-delay: 2s;
         /* the direction in which animation progresses "from" to "to" or "to" to "from" */
         /* animation-direction: reverse; */
-    }
-    /* @keyframes yash1 {
-        from {
-            width: 100px;
-        }
-        to {
-            width: 1345px;
-        }
-    } */
 
-    @keyframes yash2 {
+        /* These properties can be set using the shorthand below */
+        /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode*/
+    }
+
+    @keyframes rotate360 {
         0% {
             top: 0;
             left: 0;

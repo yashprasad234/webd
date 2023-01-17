@@ -6,98 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
 
-    <style>
-        .container {
-            height: 544px;
-            width: 100%;
-            border: 2px solid black;
-
-            /* This initializes the container as a flexbox and its children as flex-items */
-            display: flex;
-
-            /* Flex properties for flex container */
-
-            /* flex direction establishes the direction in which flex-items will be arranged. */
-            /* default value for flex direction is row */
-
-            /* flex-direction: row; */
-            /* flex-direction: column; */
-            /* flex-direction: row-reverse; row wise but elements start from right end and go towards left */
-            /* flex-direction: column-reverse; elements start from bottom of flexbox and go upwards */
-
-            /* wraps flex-items according to screen size default value is nowrap */
-            flex-wrap: wrap;
-
-            /* wraps flex-items in reverse order wrapped items move above instead of going down */
-            /* flex-wrap: wrap-reverse; */
-
-            /* We can set both the flex-direction and flex-wrap properties with this in the specified order */
-            /* flex-flow: row wrap; */
-
-            /* center alligns the flex-items in the flexbox */            
-            /* justify-content: center; */
-
-            /* leaves space between flex-items but no space between the first and last item and the flexbox */
-            /* justify-content: space-between; */
-
-            /* space between flex-items even the starting and ending elements (from flexbox walls) is even */
-            /* justify-content: space-evenly; */
-
-            /* space around every item is equal and the space between two items is doubled */
-            /* justify-content: space-around; */
-
-            /* vertically center aligns items */
-            /* align-items: center; */
-            /* items go to the bottom of flex box */
-            /* align-items: flex-end; */
-            /* default */
-            /* align-items: start; */
-            /* when items are wrapped it leaves even space between elements */
-            /* align-items: stretch; */
-        }
-
-        .item {
-            width: 150px;
-            height: 150px;
-            background-color: tomato;
-            border: 2px solid green;
-            margin: 10px;
-            padding: 3px;
-        }
-
-        /* #item-1{ */
-            /* Flex properties for flex item */
-
-            /* Higher the order later it will be displayed in flex-box*/
-            /* order: 2; */
-
-            /* When container grows this item will increase faster negative values not allowed*/
-            /* flex-grow: 3;
-            works opposite to flex-grow
-            flex-shrink: 4; */
-
-            /* Used to change size of flex-item */            
-            /* when flex-direction is set to row it controls width */
-            /* when flex-direction is set to column it controls hieght */
-            /* flex-basis: 320px; */
-        /* } */
-        /* #item-2{ */
-            /* order: 97; */
-        /* } */
-        /* #item-3{ */
-            /* enter properties in order flex-grow, flex-shrink and flex-basis */
-            /* flex: 2 2 400px; */
-            /* aligns item to the start of flexbox */
-            /* align-self: start; */
-            /* aligns item to the end of flexbox */
-            /* align-self: end; */
-            /* aligns item to center of flexbox */
-            /* align-self: center; */
-        /* } */
-    </style>
+    
 
 </head>
+<style>
+    .container {
+        height: 544px;
+        width: 100%;
+        border: 2px solid black;
+
+        /* This initializes the container as a flexbox and its children as flex-items */
+        display: flex;
+
+        /* Flex properties for flex container */
+
+        /* flex direction establishes the direction in which flex-items will be arranged. */
+        /* default value for flex direction is row */
+
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; row wise but elements start from right end and go towards left */
+        /* flex-direction: column-reverse; elements start from bottom of flexbox and go upwards */
+
+        /* wraps flex-items according to screen size default value is nowrap */
+        flex-wrap: wrap;
+
+        /* wraps flex-items in reverse order wrapped items move above instead of going down */
+        /* flex-wrap: wrap-reverse; */
+
+        /* We can set both the flex-direction and flex-wrap properties with this in the specified order */
+        /* flex-flow: row wrap; */
+
+        /* center alligns the flex-items in the flexbox */            
+        /* justify-content: center; */
+
+        /* leaves space between flex-items but no space between the first and last item and the flexbox */
+        /* justify-content: space-between; */
+
+        /* space between flex-items even the starting and ending elements (from flexbox walls) is even */
+        /* justify-content: space-evenly; */
+
+        /* space around every item is equal and the space between two items is doubled */
+        /* justify-content: space-around; */
+
+        /* vertically center aligns items */
+        /* align-items: center; */
+        /* items go to the bottom of flex box */
+        /* align-items: flex-end; */
+        /* default */
+        /* align-items: start; */
+        /* when items are wrapped it leaves even space between elements */
+        /* align-items: stretch; */
+    }
+
+    .item {
+        width: 150px;
+        height: 150px;
+        background-color: tomato;
+        border: 2px solid green;
+        margin: 10px;
+        padding: 3px;
+    }
+
+    /* #item-1{ */
+        /* Flex properties for flex item */
+
+        /* Higher the order later it will be displayed in flex-box*/
+        /* order: 2; */
+
+        /* When container grows this item will increase faster negative values not allowed*/
+        /* flex-grow: 3;
+        works opposite to flex-grow
+        flex-shrink: 4; */
+
+        /* Used to change size of flex-item */            
+        /* when flex-direction is set to row it controls width */
+        /* when flex-direction is set to column it controls hieght */
+        /* flex-basis: 320px; */
+    /* } */
+    /* #item-2{ */
+        /* order: 97; */
+    /* } */
+    /* #item-3{ */
+        /* enter properties in order flex-grow, flex-shrink and flex-basis */
+        /* flex: 2 2 400px; */
+        /* aligns item to the start of flexbox */
+        /* align-self: start; */
+        /* aligns item to the end of flexbox */
+        /* align-self: end; */
+        /* aligns item to center of flexbox */
+        /* align-self: center; */
+    /* } */
+</style>
 <body>
+
     <h1>This is a flexbox tutorial</h1>
     <div class="container">
         <div class="item" id="item-1">First Box</div>

@@ -5,50 +5,51 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
-    <style>
-
-        .box {
-            background-color: red;
-            color: #fff;
-            text-align: center;
-            font-size: 50px;
-            display: none;
-        }
-
-        /* media query uses statements that act like if condition to create responsive design */
-
-        @media (max-width: 300px) {
-            #box-1 {
-                display: block;
-                background-color: rgb(250, 126, 104);
-            }
-        }
-        
-        /* only screen specifies that this media query only works on one type of device that is screen */
-
-        @media only screen and (min-width: 300px) and (max-width: 500px) {
-            #box-2 {
-                display: block;
-                background-color: rgb(173, 198, 226);
-            }
-        }
-        
-        @media (min-width: 500px) and (max-width: 800px) {
-            #box-2 {
-                display: block;
-                background-color: rgb(113, 221, 180);
-            }
-        }
-        
-        @media (min-width: 800px){
-            #box-2 {
-                display: block;
-                background-color: rgb(124, 92, 146);
-            }
-        }
-
-    </style>
+    
 </head>
+<style>
+
+    .box {
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        font-size: 50px;
+        display: none;
+    }
+
+    /* media query uses statements that act like if condition to create responsive design */
+
+    @media (max-width: 300px) {
+        #box-1 {
+            display: block;
+            background-color: rgb(250, 126, 104);
+        }
+    }
+        
+    /* only screen specifies that this media query only works on one type of device that is screen */
+
+    @media only screen and (min-width: 300px) and (max-width: 500px) {
+        #box-2 {
+            display: block;
+            background-color: rgb(173, 198, 226);
+        }
+    }
+        
+    @media (min-width: 500px) and (max-width: 800px) {
+        #box-2 {
+            display: block;
+            background-color: rgb(113, 221, 180);
+        }
+    }
+        
+    @media (min-width: 800px){
+        #box-2 {
+            display: block;
+            background-color: rgb(124, 92, 146);
+        }
+    }
+
+</style>
 <body>
     <div class="box" id="box-1">I am a phone</div>
     <div class="box" id="box-2">I am a tablet</div>

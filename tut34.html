@@ -5,40 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Box Shadow and Text Shadow</title>
-
-    <style>
-        .container {
-            display: flex;
-        }
-        .card {
-            padding: 23px 12px;
-            margin: 23px 12px;
-            border: 2px solid red;
-            background-color: aquamarine;
-            
-            /* box-shadow: offset-x offset-y color */
-            /* box-shadow: 10px 13px grey; */
-
-            /* box-shadow: offset-x offset-y blur-radius color */
-            /* box-shadow: 10px 13px 5px grey; */
-            
-            /* box-shadow: offset-x offset-y blur-radius spread-radius color */
-            box-shadow: 10px 13px 17px 3px grey;
-
-            /* the shadow comes inside the box instead of outside */
-            /* box-shadow: inset 10px 13px 17px 3px grey; */
-
-            /* different shadow can be applied by separating them with comma(",") */
-            /* box-shadow: 10px 13px 17px 3px grey, 10px 13px 17px 3px red; */
-        }
-
-        h2 {
-            /* All application is similar to box-shadow but it is for text */
-            text-shadow: 1px 2px red;
-        }
-    </style>
-
 </head>
+<style>
+    .container {
+        display: flex;
+    }
+    .card {
+        padding: 23px 12px;
+        margin: 23px 12px;
+        border: 2px solid red;
+        background-color: aquamarine;
+        
+        /* box-shadow: offset-x offset-y color */
+        /* box-shadow: 10px 13px grey; */
+
+        /* box-shadow: offset-x offset-y blur-radius color */
+        /* box-shadow: 10px 13px 5px grey; */
+        
+        /* box-shadow: offset-x offset-y blur-radius spread-radius color */
+        box-shadow: 10px 13px 17px 3px grey;
+
+        /* the shadow comes inside the box instead of outside */
+        /* box-shadow: inset 10px 13px 17px 3px grey; */
+
+        /* different shadow can be applied by separating them with comma(",") */
+        /* box-shadow: 10px 13px 17px 3px grey, 10px 13px 17px 3px red; */
+    }
+
+    h2 {
+        /* All application is similar to box-shadow but it is for text */
+        text-shadow: 1px 2px red;
+    }
+</style>
 <body>
     <div class="container">
         <div class="card" id="card-1">

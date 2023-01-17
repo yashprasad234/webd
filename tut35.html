@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variables/Custom Properties</title>
-    <style>
-        /* variables defined in root are accessible globally otherwise they are accessible in the scope they are
-        defined in */
-        :root {
-            --primary-color: blue;
-            --danger-color: red;
-            --max-w: 333px;
-        }
-        .box {
-            width: 200px;
-            height: 200px;
-            /* to use a css variable we need to use the syntax below */
-            background-color: var(--primary-color);
-            border: 2px solid var(--danger-color);
-            margin: 2px 10px;
-        }
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: var(--danger-color);
-            max-width: var(--max-w);
-            margin: auto;
-        }
-    </style>
 </head>
+<style>
+    /* variables defined in root are accessible globally otherwise they are accessible in the scope they are
+    defined in */
+    :root {
+        --primary-color: blue;
+        --danger-color: red;
+        --max-w: 333px;
+    }
+    .box {
+        width: 200px;
+        height: 200px;
+        /* to use a css variable we need to use the syntax below */
+        background-color: var(--primary-color);
+        border: 2px solid var(--danger-color);
+        margin: 2px 10px;
+    }
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--danger-color);
+        max-width: var(--max-w);
+        margin: auto;
+    }
+</style>
 <body>
     <div class="container">
         <div class="box"></div>
